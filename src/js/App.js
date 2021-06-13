@@ -2,6 +2,7 @@ import logo from '../logo.svg';
 import '../App.css';
 import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
+import teeTimes from '../assets/tee-times.jpeg';
 
 import theme from './Theme';
 
@@ -10,11 +11,12 @@ import TopNav from './components/TopNav';
 import HeroLarge from './components/HeroLarge';
 import Wallet from './components/Wallet';
 import AppScreen from './components/AppScreen';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
+      <AppWrapper>
         <header className="App-header">
           <TopNav />
           <HeroLarge
@@ -24,9 +26,10 @@ function App() {
             <Wallet />
           </FloatWrapper>
           <AppScreen
-            subheader='Tee Time'
-            header='Book your next round with 18Birdies'
             description='Explore tee times at thousands of courses to find your next round.'
+            header='Book your next round with 18Birdies'
+            imgSrc={teeTimes}
+            subheader='Tee Time'
           />
           <a
             className="App-link"
@@ -37,13 +40,17 @@ function App() {
             Learn React
           </a>
         </header>
-      </div>
+        <Footer />
+      </AppWrapper>
     </ThemeProvider>
   );
 }
 
 export default App;
 
+
+const AppWrapper = styled.div`
+`;
 
 const FloatWrapper = styled.div`
   margin: -140px 0 180px;

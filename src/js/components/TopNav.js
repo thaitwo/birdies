@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../../birdieslogo.svg';
+import Logo from './Logo';
 import Button from './Button.js';
 
 class TopNav extends React.Component {
@@ -9,7 +9,7 @@ class TopNav extends React.Component {
     return (
       <HeaderBar>
         <LogoWrapper>
-          <Logo src={logo} alt="logo" />
+          <Logo type='dark' />
         </LogoWrapper>
         <Menu>
           <li>Featured</li>
@@ -45,11 +45,6 @@ const HeaderBar = styled.div`
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const Logo = styled.img`
-  width: 140px;
-  height: auto;
 `;
 
 const Menu = styled.ul`

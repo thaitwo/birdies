@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import PhoneFrame from './PhoneFrame';
+import Button from './Button';
 
 class AppScreen extends React.Component {
   constructor(props) {
@@ -9,18 +11,24 @@ class AppScreen extends React.Component {
     this.header = props.header;
     this.description = props.description;
     this.buttonLabel = props.buttonLabel;
+    this.imgSrc = props.imgSrc;
   }
 
   render() {
     return (
       <Wrapper>
         <PhoneWrapper>
-
+          <PhoneFrame
+            imgSrc={this.imgSrc}
+          />
         </PhoneWrapper>
         <TextWrapper>
           <Subheader>{this.subheader}</Subheader>
           <Header>{this.header}</Header>
           <Description>{this.description}</Description>
+          <Button 
+            label='Book Tee Time'
+          />
         </TextWrapper>
       </Wrapper>
     );
@@ -41,7 +49,7 @@ const PhoneWrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-
+  padding-left: 104px;
 `;
 
 const Subheader = styled.div`
@@ -55,11 +63,13 @@ const Subheader = styled.div`
 const Header = styled.div`
   font-size: 28px;
   font-weight: bold;
-  line-height: 48px;
+  line-height: 36px;
+  margin-bottom: 12px;
 `;
 
 const Description = styled.div`
   color: ${props => props.theme.colors.gray400};
   font-size: 18px;
   line-height: 28px;
+  margin-bottom: 24px;
 `;
