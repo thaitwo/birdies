@@ -26,9 +26,7 @@ class AppScreen extends React.Component {
           <Subheader>{this.subheader}</Subheader>
           <Header>{this.header}</Header>
           <Description>{this.description}</Description>
-          <Button 
-            label='Book Tee Time'
-          />
+          <Button>Book Tee Time</Button>
         </TextWrapper>
       </Wrapper>
     );
@@ -41,6 +39,7 @@ const Wrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: row;
+  margin: 120px 0;
   text-align: left;
 `;
 

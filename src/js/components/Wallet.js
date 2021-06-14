@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Icon from '@mdi/react';
+import { mdiChevronRight } from '@mdi/js';
 
 class Wallet extends React.Component {
   constructor(props) {
@@ -14,13 +16,19 @@ class Wallet extends React.Component {
         <Card>
           <Header>For Golfers</Header>
           <Description>Take your game to the next level with course GPS, Stats, and more.</Description>
-          <TextLink>Explore Features</TextLink>
+          <TextLink href="#">
+            <span>Explore Feature</span>
+            <Icon path={mdiChevronRight} size={1} />
+          </TextLink>
         </Card>
         <LineDivider />
         <Card>
           <Header>For Courses</Header>
           <Description>Leverage our community to grow your business and increase revenue.</Description>
-          <TextLink>Explore Business</TextLink>
+          <TextLink href="#">
+            <span>Explore Business</span>
+            <Icon path={mdiChevronRight} size={1} />
+          </TextLink>
         </Card>
       </Wrapper>
     );
@@ -65,7 +73,14 @@ const Description = styled.p`
 `;
 
 const TextLink = styled.a`
+  align-items: center;
   color: ${props => props.theme.colors.primary};
+  display: flex;
   font-size: 18px;
   line-height: 32px;
+  text-decoration: none;
+
+  span {
+    padding-right: 4px;
+  }
 `;

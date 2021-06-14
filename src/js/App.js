@@ -12,6 +12,7 @@ import HeroLarge from './components/HeroLarge';
 import Wallet from './components/Wallet';
 import AppScreen from './components/AppScreen';
 import Footer from './components/Footer';
+import Billboard from './components/Billboard';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             imgSrc={teeTimes}
             subheader='Tee Time'
           />
+          <Billboard />
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -53,5 +55,5 @@ const AppWrapper = styled.div`
 `;
 
 const FloatWrapper = styled.div`
-  margin: -140px 0 180px;
+  margin: -140px 0 48px;
 `;

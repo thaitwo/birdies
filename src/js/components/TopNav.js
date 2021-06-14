@@ -19,9 +19,7 @@ class TopNav extends React.Component {
           <li>About</li>
         </Menu>
         <ButtonWrapper>
-          <Button
-            label="Download"
-          />
+          <Button>Download</Button>
         </ButtonWrapper>
       </HeaderBar>
     )

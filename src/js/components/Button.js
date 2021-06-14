@@ -4,14 +4,12 @@ import styled from 'styled-components';
 class Button extends React.Component {
   constructor(props) {
     super(props);
-
-    this.label = this.props.label;
   }
 
   render() {
     return (
       <ButtonWrapper>
-        {this.label}
+        {this.props.children}
       </ButtonWrapper>
     )
   }

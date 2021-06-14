@@ -38,6 +38,7 @@ const HeroWrapper = styled.div`
   flex-direction: column;
   height: 680px;
   justify-content: center;
+  text-align: center;
   width: 100%;
 `;
 
