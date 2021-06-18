@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PhoneFrame from './PhoneFrame';
 import Button from './Button';
+import Text from '../const/typography';
 
 class AppScreen extends React.Component {
   constructor(props) {
@@ -23,9 +24,9 @@ class AppScreen extends React.Component {
           />
         </PhoneWrapper>
         <TextWrapper>
-          <Subheader>{this.subheader}</Subheader>
-          <Header>{this.header}</Header>
-          <Description>{this.description}</Description>
+          <Text.SH>{this.subheader}</Text.SH>
+          <Text.H3>{this.header}</Text.H3>
+          <Text.P1>{this.description}</Text.P1>
           <Button>Book Tee Time</Button>
         </TextWrapper>
       </Wrapper>
@@ -41,6 +42,14 @@ const Wrapper = styled.div`
   flex-direction: row;
   margin: 120px 0;
   text-align: left;
+
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  button {
+    margin-top: 32px;
+  }
 `;
 
 const PhoneWrapper = styled.div`

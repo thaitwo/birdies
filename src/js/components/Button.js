@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Text from '../const/typography';
 
 class Button extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class Button extends React.Component {
   render() {
     return (
       <ButtonWrapper>
-        {this.props.children}
+        <Text.P2B>{this.props.children}</Text.P2B>
       </ButtonWrapper>
     )
   }
@@ -21,10 +22,12 @@ const ButtonWrapper = styled.button`
   align-items: center;
   background: ${props => props.theme.colors.primary};
   border: none;
-  color: ${props => props.theme.colors.white};
   display: flex;
-  font-size: 16px;
   height: 40px;
   justify-content: space-between;
   padding: 0 24px;
+
+  p {
+    color: ${props => props.theme.colors.white};
+  }
 `;

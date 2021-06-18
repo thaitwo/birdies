@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Text from '../const/typography';
 import appleDownload from '../../assets/app-download-apple.png';
 import googleDownload from '../../assets/app-download-google.png';
 import featureImage from '../../assets/featuredImageCommunity.png';
@@ -15,7 +16,7 @@ class HeroLarge extends React.Component {
     return (
       <HeroWrapper>
         <ContentWrapper>
-          <HeaderText>{this.text}</HeaderText>
+          <Text.H1>{this.text}</Text.H1>
           <ButtonGroup>
             <ButtonImg src={appleDownload} />
             <ButtonImg src={googleDownload} />
@@ -40,6 +41,11 @@ const HeroWrapper = styled.div`
   justify-content: center;
   text-align: center;
   width: 100%;
+
+  h1 {
+    color: ${props => props.theme.colors.white};
+    margin-bottom: 40px;
+  }
 `;
 
 const ContentWrapper = styled.div`

@@ -1,5 +1,15 @@
 const theme = {
+  shadows: {
+    primary: '0 3px 8px rgb(0, 0, 0, 0.08)',
+  },
   colors: {
+    text: {
+      primary: '#1D1D1D',
+      secondary: '#3A3A3A',
+      tertiary: '#6D6D6D',
+      subtle: '#929292',
+      brandPrimary: '#44A2DA'
+    },
     white: '#FFFFFF',
     black: '#000000',
     primary: '#2AB5FF',
@@ -8,6 +18,7 @@ const theme = {
     whiteTransparent48: 'rgba(255,255,255,0.48)',
     blackTransparent48: 'rgba(0,0,0,0.48)',
     blackTransparent64: 'rgba(0,0,0,0.64)',
+    secondaryTransparent88: 'rgba(0,58,93,0.88)',
     brandPurple900: '#2F143D',
     brandPurple700: '#3F1B51',
     brandPurple500: '#4F2265',

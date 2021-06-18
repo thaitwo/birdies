@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from './Logo';
 import Button from './Button.js';
+import Text from '../const/typography';
 
 class TopNav extends React.Component {
 
@@ -12,11 +13,21 @@ class TopNav extends React.Component {
           <Logo type='dark' />
         </LogoWrapper>
         <Menu>
-          <li>Featured</li>
-          <li>Business</li>
-          <li>Clubhouse</li>
-          <li>Support</li>
-          <li>About</li>
+          <li>
+            <Text.P2>Featured</Text.P2>
+          </li>
+          <li>
+            <Text.P2>Business</Text.P2>
+          </li>
+          <li>
+            <Text.P2>Clubhouse</Text.P2>
+          </li>
+          <li>
+            <Text.P2>Support</Text.P2>
+          </li>
+          <li>
+            <Text.P2>About</Text.P2>
+          </li>
         </Menu>
         <ButtonWrapper>
           <Button>Download</Button>
@@ -41,19 +52,22 @@ const HeaderBar = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-  display: flex;
   align-items: center;
+  display: flex;
+  flex: 1;
 `;
 
 const Menu = styled.ul`
   align-items: center;
   color: black;
   display: flex;
+  flex: 1;
   flex-direction: row;
   font-size: 17px;
   height: 64px;
   list-style-type: none;
   margin: 0;
+  padding: 0;
 
   li {
     padding: 0 24px;
@@ -62,6 +76,6 @@ const Menu = styled.ul`
 
 const ButtonWrapper = styled.div`
   display: flex;
+  flex: 1;
   justify-content: flex-end;
-  width: 140px;
 `;

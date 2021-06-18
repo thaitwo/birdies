@@ -2,37 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 import Icon from '@mdi/react';
 import { mdiChevronRight } from '@mdi/js';
+import Link from './Link';
+import Text from '../const/typography';
 
-class Wallet extends React.Component {
-  constructor(props) {
-    super(props);
-
-
-  }
-
-  render() {
-    return (
-      <Wrapper>
-        <Card>
-          <Header>For Golfers</Header>
-          <Description>Take your game to the next level with course GPS, Stats, and more.</Description>
-          <TextLink href="#">
-            <span>Explore Feature</span>
-            <Icon path={mdiChevronRight} size={1} />
-          </TextLink>
-        </Card>
-        <LineDivider />
-        <Card>
-          <Header>For Courses</Header>
-          <Description>Leverage our community to grow your business and increase revenue.</Description>
-          <TextLink href="#">
-            <span>Explore Business</span>
-            <Icon path={mdiChevronRight} size={1} />
-          </TextLink>
-        </Card>
-      </Wrapper>
-    );
-  }
+const Wallet = (props) => {
+  return (
+    <Wrapper>
+      <Card>
+        <Text.H3>For Golfers</Text.H3>
+        <Text.P1>Take your game to the next level with course GPS, Stats, and more.</Text.P1>
+        <Link>Explore Feature</Link>
+      </Card>
+      <LineDivider />
+      <Card>
+        <Text.H3>For Courses</Text.H3>
+        <Text.P1>Leverage our community to grow your business and increase revenue.</Text.P1>
+        <Link>Explore Business</Link>
+      </Card>
+    </Wrapper>
+  );
 }
 
 export default Wallet;
@@ -45,6 +33,14 @@ const Wrapper = styled.div`
   flex-direction: row;
   max-width: 900px;
   padding: 48px 48px 56px 48px;
+
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  a {
+    margin-top: 32px;
+  }
 `;
 
 const Card = styled.div`

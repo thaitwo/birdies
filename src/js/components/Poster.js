@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
+import Text from '../const/typography';
 import Icon from '@mdi/react';
 import { mdiCheckCircle, mdiChevronRight } from '@mdi/js';
 
@@ -10,16 +11,16 @@ class Billboard extends React.Component {
     return (
       <StyledOuterWrapper>
         <StyledLeftWrapper>
-          <StyledHeader>Take your game further with a Premium Membership</StyledHeader>
+          <Text.H3>Take your game further with a Premium Membership</Text.H3>
           <Button>Discover Premium</Button>
         </StyledLeftWrapper>
         <StyledRightWrapper>
-          <StyledSubheader>Everything in the free version, plus...</StyledSubheader>
+          <Text.H6>Everything in the free version, plus...</Text.H6>
           <StyledList>
             <li>
               <div>
                 <Icon path={mdiCheckCircle} size={1} />
-                <span>Advanced GPS+</span>
+                <Text.P3>Advanced GPS+</Text.P3>
               </div>
               <StyledChevronWrapper>
                 <Icon path={mdiChevronRight} size={1} />
@@ -28,7 +29,7 @@ class Billboard extends React.Component {
             <li>
               <div>
                 <Icon path={mdiCheckCircle} size={1} />
-                <span>Advanced Stats</span>
+                <Text.P3>Advanced Stats</Text.P3>
               </div>
               <StyledChevronWrapper>
                 <Icon path={mdiChevronRight} size={1} />
@@ -37,7 +38,7 @@ class Billboard extends React.Component {
             <li>
               <div>
                 <Icon path={mdiCheckCircle} size={1} />
-                <span>Side Games</span>
+                <Text.P3>Side Games</Text.P3>
               </div>
               <StyledChevronWrapper>
                 <Icon path={mdiChevronRight} size={1} />
@@ -46,7 +47,7 @@ class Billboard extends React.Component {
             <li>
               <div>
                 <Icon path={mdiCheckCircle} size={1} />
-                <span>Partner Benefits &amp; Discounts</span>
+                <Text.P3>Partner Benefits &amp; Discounts</Text.P3>
               </div>
               <StyledChevronWrapper>
                 <Icon path={mdiChevronRight} size={1} />
@@ -55,7 +56,7 @@ class Billboard extends React.Component {
             <li>
               <div>
                 <Icon path={mdiCheckCircle} size={1} />
-                <span>Premium Lesson Plans</span>
+                <Text.P3>Premium Lesson Plans</Text.P3>
               </div>
               <StyledChevronWrapper>
                 <Icon path={mdiChevronRight} size={1} />
@@ -64,7 +65,7 @@ class Billboard extends React.Component {
             <li>
               <div>
                 <Icon path={mdiCheckCircle} size={1} />
-                <span>and much more!</span>
+                <Text.P3>and much more!</Text.P3>
               </div>
               <StyledChevronWrapper>
                 <Icon path={mdiChevronRight} size={1} />
@@ -88,6 +89,17 @@ const StyledOuterWrapper = styled.div`
   max-width: 1000px;
   padding: 48px;
   width: 100%;
+
+  h3,
+  h6 {
+    color: ${props => props.theme.colors.white};
+    margin-bottom: 32px;
+  }
+
+  p {
+    color: ${props => props.theme.colors.white};
+    padding-left: 12px;
+  }
 `;
 
 const StyledRightWrapper = styled.div`
@@ -96,13 +108,6 @@ const StyledRightWrapper = styled.div`
 
 const StyledLeftWrapper = styled.div`
   flex: 1;
-`;
-
-const StyledHeader = styled.div`
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 44px;
-  margin-bottom: 40px;
 `;
 
 const StyledSubheader = styled.div`
