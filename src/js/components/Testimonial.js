@@ -54,15 +54,6 @@ const StyledQuoteIcon = styled.div`
   margin-top: -24px;
 `;
 
-const StyledQuote = styled.p`
-  color: ${props => props.theme.colors.gray500};
-  line-height: 1.5;
-`;
-
-const StyledQuoteAuthor = styled.div`
-  font-weight: bold;
-`;
-
 const StyledLogo = styled.img`
   max-width: 140px;
   width: 100%;

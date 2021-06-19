@@ -1,14 +1,25 @@
+// DEPENDENCIES
 import React from 'react';
 import styled from 'styled-components';
+
+// CONSTANTS
 import Text from '../const/typography';
 
+// COMPONENTS
+import Button from './Button';
+
 const BillboardTwo = (props) => {
+  const { imageUrl, header, subheader, children, buttonLabel } = props;
+
   return (
-    <StyledWrapper imageUrl={props.imageUrl}>
+    <StyledWrapper imageUrl={imageUrl}>
       <StyledContentWrapper>
-        <Text.H2>{props.header}</Text.H2>
-        <Text.P1>{props.subheader}</Text.P1>
-        {props.children}
+        <Text.H2>{header}</Text.H2>
+        <StyledSubheaderWrapper>
+          <Text.P1>{subheader}</Text.P1>
+        </StyledSubheaderWrapper>
+        {children}
+        <Button large>{buttonLabel}</Button>
       </StyledContentWrapper>
     </StyledWrapper>
   );
@@ -36,6 +47,11 @@ const StyledWrapper = styled.div`
   }
 `;
 
+const StyledSubheaderWrapper = styled.div`
+  margin-bottom: 24px;
+  max-width: 700px;
+`;
+
 const StyledContentWrapper = styled.div`
   align-items: center;
   display: flex;
@@ -44,10 +60,6 @@ const StyledContentWrapper = styled.div`
   max-width: 1000px;
   text-align: center;
   width: 100%;
-
-  h4 {
-    max-width: 800px;
-  }
 
   ul {
     display: flex;
@@ -64,8 +76,4 @@ const StyledContentWrapper = styled.div`
   button {
     margin-top 48px;
   }
-`;
-
-const StyledSubheader = styled.h6`
-  max-width: 800px;
 `;

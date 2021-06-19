@@ -1,7 +1,14 @@
+// DEPENDENCIES
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+// COMPONENTS
 import Logo from './Logo';
 import Button from './Button.js';
+
+// CONSTANTS
+import * as ROUTES from '../const/routes';
 import Text from '../const/typography';
 
 class TopNav extends React.Component {
@@ -12,23 +19,23 @@ class TopNav extends React.Component {
         <LogoWrapper>
           <Logo type='dark' />
         </LogoWrapper>
-        <Menu>
-          <li>
+        <Nav>
+          <StyledLink to={ROUTES.FEATURES}>
             <Text.P2>Featured</Text.P2>
-          </li>
-          <li>
+          </StyledLink>
+          <StyledLink to={ROUTES.BUSINESS}>
             <Text.P2>Business</Text.P2>
-          </li>
-          <li>
+          </StyledLink>
+          <StyledLink to={ROUTES.CLUBHOUSE}>
             <Text.P2>Clubhouse</Text.P2>
-          </li>
-          <li>
+          </StyledLink>
+          <a href='https://help.18birdies.com/' target='_blank'>
             <Text.P2>Support</Text.P2>
-          </li>
-          <li>
+          </a>
+          <StyledLink to={ROUTES.ABOUT}>
             <Text.P2>About</Text.P2>
-          </li>
-        </Menu>
+          </StyledLink>
+        </Nav>
         <ButtonWrapper>
           <Button>Download</Button>
         </ButtonWrapper>
@@ -57,7 +64,7 @@ const LogoWrapper = styled.div`
   flex: 1;
 `;
 
-const Menu = styled.ul`
+const Nav = styled.div`
   align-items: center;
   color: black;
   display: flex;
@@ -69,8 +76,9 @@ const Menu = styled.ul`
   margin: 0;
   padding: 0;
 
-  li {
+  a {
     padding: 0 24px;
+    text-decoration: none;
   }
 `;
 
@@ -78,4 +86,8 @@ const ButtonWrapper = styled.div`
   display: flex;
   flex: 1;
   justify-content: flex-end;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;

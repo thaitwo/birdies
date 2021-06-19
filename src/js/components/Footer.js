@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './Logo.js';
-import Text from '../const/typography';
 import DownloadButtons from './DownloadButtons.js';
 
 class Footer extends React.Component {
@@ -167,20 +166,4 @@ const LinkGroup = styled.div`
 
 const Copyright = styled.div`
 
-`;
-
-
-const ButtonGroup = styled.div`
-
-`;
-
-const ButtonImg = styled.img`
-  border: 1px solid ${props => props.theme.colors.white};
-  border-radius: 6px;
-  margin-right: 16px;
-  width: 136px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
 `;

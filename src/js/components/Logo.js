@@ -1,7 +1,14 @@
+// DEPENDENCIES
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+// IMAGES
 import logoLight from '../../birdieslogoWhite.svg';
 import logoDark from '../../birdieslogo.svg';
+
+// CONSTANTS
+import * as ROUTES from '../const/routes';
 
 class Logo extends React.Component {
   constructor(props) {
@@ -15,7 +22,9 @@ class Logo extends React.Component {
 
     return (
       <Wrapper>
-        <StyledLogo src={logoUrl} />
+        <StyledLink to={ROUTES.HOME}>
+          <StyledLogo src={logoUrl} />
+        </StyledLink>
       </Wrapper>
     )
   }
@@ -30,4 +39,8 @@ const Wrapper = styled.div`
 
 const StyledLogo = styled.img`
 
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;

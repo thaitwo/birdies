@@ -4,7 +4,6 @@ import Link from './Link';
 import Text from '../const/typography';
 
 const Podiums = (props) => {
-  console.log(Text);
   const articlesArray = props.articles;
   const articleList = articlesArray.map((article, index) => {
     return (

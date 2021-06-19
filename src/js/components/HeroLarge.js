@@ -47,10 +47,3 @@ const HeroWrapper = styled.div`
 const ContentWrapper = styled.div`
   max-width: 600px
 `;
-
-const HeaderText = styled.h2`
-  color: ${props => props.theme.colors.white};
-  font-size: 48px;
-  line-height: 1.25;
-  margin: 0 0 24px 0;
-`;

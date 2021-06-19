@@ -12,7 +12,7 @@ class Billboard extends React.Component {
       <StyledOuterWrapper>
         <StyledLeftWrapper>
           <Text.H3>Take your game further with a Premium Membership</Text.H3>
-          <Button>Discover Premium</Button>
+          <Button large>Discover Premium</Button>
         </StyledLeftWrapper>
         <StyledRightWrapper>
           <Text.H6>Everything in the free version, plus...</Text.H6>
@@ -108,10 +108,6 @@ const StyledRightWrapper = styled.div`
 
 const StyledLeftWrapper = styled.div`
   flex: 1;
-`;
-
-const StyledSubheader = styled.div`
-
 `;
 
 const StyledChevronWrapper = styled.div`

@@ -27,7 +27,7 @@ class AppScreen extends React.Component {
           <Text.SH>{this.subheader}</Text.SH>
           <Text.H3>{this.header}</Text.H3>
           <Text.P1>{this.description}</Text.P1>
-          <Button>Book Tee Time</Button>
+          <Button large>Book Tee Time</Button>
         </TextWrapper>
       </Wrapper>
     );
@@ -58,26 +58,4 @@ const PhoneWrapper = styled.div`
 
 const TextWrapper = styled.div`
   padding-left: 104px;
-`;
-
-const Subheader = styled.div`
-  color: ${props => props.theme.colors.primary};
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
-  text-transform: uppercase;
-`;
-
-const Header = styled.div`
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 36px;
-  margin-bottom: 12px;
-`;
-
-const Description = styled.div`
-  color: ${props => props.theme.colors.gray400};
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 24px;
 `;

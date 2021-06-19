@@ -18,6 +18,12 @@ const HeroTwo = props => {
   )
 };
 
+export default HeroTwo;
+
 const StyledWrapper = styled.div`
+
+`;
+
+const StyledInnerWrapper = styled.div`
 
 `;

@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon from '@mdi/react';
-import { mdiChevronRight } from '@mdi/js';
 import Link from './Link';
 import Text from '../const/typography';
 
@@ -54,29 +52,4 @@ const LineDivider = styled.div`
   margin: 0 48px;
   top: 0;
   width: 1px;
-`;
-
-const Header = styled.h3`
-  font-size: 28px;
-  line-height: 1.25;
-  margin: 0 0 16px 0;
-`;
-
-const Description = styled.p`
-  font-size: 20px;
-  line-height: 32px;
-  margin: 0 0 40px 0;
-`;
-
-const TextLink = styled.a`
-  align-items: center;
-  color: ${props => props.theme.colors.primary};
-  display: flex;
-  font-size: 18px;
-  line-height: 32px;
-  text-decoration: none;
-
-  span {
-    padding-right: 4px;
-  }
 `;
