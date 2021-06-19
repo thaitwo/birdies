@@ -1,21 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from './Link';
+import TextLink from './TextLink';
 import Text from '../const/typography';
+import * as ROUTES from '../const/routes';
 
 const Wallet = (props) => {
+
   return (
     <Wrapper>
       <Card>
         <Text.H3>For Golfers</Text.H3>
         <Text.P1>Take your game to the next level with course GPS, Stats, and more.</Text.P1>
-        <Link>Explore Feature</Link>
+        <TextLink to={ROUTES.FEATURES}>Explore Feature</TextLink>
       </Card>
       <LineDivider />
       <Card>
         <Text.H3>For Courses</Text.H3>
         <Text.P1>Leverage our community to grow your business and increase revenue.</Text.P1>
-        <Link>Explore Business</Link>
+        <TextLink to={ROUTES.BUSINESS}>Explore Business</TextLink>
       </Card>
     </Wrapper>
   );

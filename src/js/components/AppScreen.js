@@ -4,34 +4,22 @@ import PhoneFrame from './PhoneFrame';
 import Button from './Button';
 import Text from '../const/typography';
 
-class AppScreen extends React.Component {
-  constructor(props) {
-    super(props);
+const AppScreen = props => {
+  const { header, subheader, description, screenImageUrl } = props;
 
-    this.subheader = props.subheader;
-    this.header = props.header;
-    this.description = props.description;
-    this.buttonLabel = props.buttonLabel;
-    this.imgSrc = props.imgSrc;
-  }
-
-  render() {
-    return (
-      <Wrapper>
-        <PhoneWrapper>
-          <PhoneFrame
-            imgSrc={this.imgSrc}
-          />
-        </PhoneWrapper>
-        <TextWrapper>
-          <Text.SH>{this.subheader}</Text.SH>
-          <Text.H3>{this.header}</Text.H3>
-          <Text.P1>{this.description}</Text.P1>
-          <Button large>Book Tee Time</Button>
-        </TextWrapper>
-      </Wrapper>
-    );
-  }
+  return (
+    <Wrapper>
+      <PhoneWrapper>
+        <PhoneFrame size='large' screenImageUrl={screenImageUrl} />
+      </PhoneWrapper>
+      <TextWrapper>
+        <Text.SH>{subheader}</Text.SH>
+        <Text.H3>{header}</Text.H3>
+        <Text.P1>{description}</Text.P1>
+        <Button large>Book Tee Time</Button>
+      </TextWrapper>
+    </Wrapper>
+  );
 }
 
 export default AppScreen;

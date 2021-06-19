@@ -2,22 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import Text from '../const/typography';
 import Icon from '@mdi/react';
+import { Link } from 'react-router-dom';
 import { mdiChevronRight } from '@mdi/js';
 
-const Link = (props) => {
-  const icon = props.noIcon ? '' : <Icon path={mdiChevronRight} size={1} />;
+const TextLink = (props) => {
+  const { noIcon, to } = props;
+  const icon = noIcon ? '' : <Icon path={mdiChevronRight} size={1} />;
 
   return (
-    <StyledLink href="#">
+    <StyledLink to={to}>
       <Text.P2B>{props.children}</Text.P2B>
       {icon}
     </StyledLink>
   )
 }
 
-export default Link;
+export default TextLink;
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   align-items: center;
   color: ${props => props.theme.colors.text.brandPrimary};
   display: flex;

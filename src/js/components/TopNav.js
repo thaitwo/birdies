@@ -20,21 +20,11 @@ class TopNav extends React.Component {
           <Logo type='dark' />
         </LogoWrapper>
         <Nav>
-          <StyledLink to={ROUTES.FEATURES}>
-            <Text.P2>Featured</Text.P2>
-          </StyledLink>
-          <StyledLink to={ROUTES.BUSINESS}>
-            <Text.P2>Business</Text.P2>
-          </StyledLink>
-          <StyledLink to={ROUTES.CLUBHOUSE}>
-            <Text.P2>Clubhouse</Text.P2>
-          </StyledLink>
-          <a href='https://help.18birdies.com/' target='_blank'>
-            <Text.P2>Support</Text.P2>
-          </a>
-          <StyledLink to={ROUTES.ABOUT}>
-            <Text.P2>About</Text.P2>
-          </StyledLink>
+          <Link to={ROUTES.FEATURES}>Featured</Link>
+          <Link to={ROUTES.BUSINESS}>Business</Link>
+          <Link to={ROUTES.CLUBHOUSE}>Clubhouse</Link>
+          <a href='https://help.18birdies.com/' target='_blank'>Support</a>
+          <Link to={ROUTES.ABOUT}>About</Link>
         </Nav>
         <ButtonWrapper>
           <Button>Download</Button>
@@ -49,13 +39,15 @@ export default TopNav;
 const HeaderBar = styled.div`
   align-items: center;
   background: ${props => props.theme.colors.white};
+  box-shadow: ${props => props.theme.shadows.primary};
   display: flex;
   justify-content: space-between;
   left: 0;
   padding: 0 32px;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
+  z-index: 10;
 `;
 
 const LogoWrapper = styled.div`
@@ -77,8 +69,15 @@ const Nav = styled.div`
   padding: 0;
 
   a {
+    color: ${props => props.theme.colors.text.primary};
+    font-family: 'Circular Std Book', Arial, Helvetica, sans-serif;
+    line-height: 64px;
     padding: 0 24px;
     text-decoration: none;
+
+    &:hover {
+      color: ${props => props.theme.colors.text.brandPrimary};
+    }
   }
 `;
 
@@ -86,8 +85,4 @@ const ButtonWrapper = styled.div`
   display: flex;
   flex: 1;
   justify-content: flex-end;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
 `;

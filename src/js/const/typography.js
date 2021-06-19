@@ -24,7 +24,8 @@ const H2 = styled.h2`
   font-family: ${fontBlack};
   font-size: 40px;
   font-weight: 900;
-  margin-bottom: 24px;
+  line-height: 1.25;
+  margin-bottom: 16px;
 `;
 
 const H3 = styled.h3`

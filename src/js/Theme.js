@@ -18,6 +18,7 @@ const theme = {
     whiteTransparent48: 'rgba(255,255,255,0.48)',
     blackTransparent48: 'rgba(0,0,0,0.48)',
     blackTransparent64: 'rgba(0,0,0,0.64)',
+    blackTransparent72: 'rgba(0,0,0,0.72)',
     secondaryTransparent88: 'rgba(0,58,93,0.88)',
     brandPurple900: '#2F143D',
     brandPurple700: '#3F1B51',

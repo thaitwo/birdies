@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from './Link';
+import TextLink from './TextLink';
 import Text from '../const/typography';
 
 const Podiums = (props) => {
@@ -14,7 +14,7 @@ const Podiums = (props) => {
             <Text.H6>{article.header}</Text.H6>
             <Text.P2>{article.subheader}</Text.P2>
           </StyledCopyWrapper>
-          <Link>Read More</Link>
+          <TextLink>Read More</TextLink>
         </StyledContentWrapper>
       </li>
     );

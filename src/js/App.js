@@ -13,6 +13,7 @@ import * as ROUTES from './const/routes';
 // PAGES
 import HomePage from './pages/HomePage';
 import FeaturesPage from './pages/FeaturesPage';
+import BusinessPage from './pages/BusinessPage';
 
 // COMPONENTS
 import TopNav from './components/TopNav';
@@ -26,8 +27,11 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <AppWrapper>
             <TopNav />
-            <Route exact path={ROUTES.HOME} component={HomePage} />
-            <Route exact path={ROUTES.FEATURES} component={FeaturesPage} />
+            <Body>
+              <Route exact path={ROUTES.HOME} component={HomePage} />
+              <Route exact path={ROUTES.FEATURES} component={FeaturesPage} />
+              <Route exact path={ROUTES.BUSINESS} component={BusinessPage} />
+            </Body>
           <Footer />
         </AppWrapper>
       </ThemeProvider>
@@ -40,10 +44,15 @@ export default App;
 
 const AppWrapper = styled.div`
   background-color: white;
+  font-family: 'Circular Std Book', Arial, Helvetica, sans-serif;
   min-height: 100vh;
 
   ul {
     list-style-type: none;
     padding: 0;
   }
+`;
+
+const Body = styled.div`
+  transform: translateY(64px);
 `;

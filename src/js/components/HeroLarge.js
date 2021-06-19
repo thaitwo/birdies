@@ -33,7 +33,7 @@ const HeroWrapper = styled.div`
   box-shadow:inset 0 0 0 2000px ${props => props.theme.colors.blackTransparent64};
   display: flex;
   flex-direction: column;
-  height: 680px;
+  height: 600px;
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -45,5 +45,6 @@ const HeroWrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  max-width: 600px
+  max-width: 600px;
+  padding-bottom: 104px;
 `;
