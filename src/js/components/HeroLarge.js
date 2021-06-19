@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Text from '../const/typography';
-import appleDownload from '../../assets/app-download-apple.png';
-import googleDownload from '../../assets/app-download-google.png';
 import featureImage from '../../assets/featuredImageCommunity.png';
+import DownloadButtons from './DownloadButtons';
 
 class HeroLarge extends React.Component {
   constructor(props) {
@@ -17,10 +16,7 @@ class HeroLarge extends React.Component {
       <HeroWrapper>
         <ContentWrapper>
           <Text.H1>{this.text}</Text.H1>
-          <ButtonGroup>
-            <ButtonImg src={appleDownload} />
-            <ButtonImg src={googleDownload} />
-          </ButtonGroup>
+          <DownloadButtons />
         </ContentWrapper>
       </HeroWrapper>
     );
@@ -57,19 +53,4 @@ const HeaderText = styled.h2`
   font-size: 48px;
   line-height: 1.25;
   margin: 0 0 24px 0;
-`;
-
-const ButtonGroup = styled.div`
-
-`;
-
-const ButtonImg = styled.img`
-  border: 1px solid ${props => props.theme.colors.white};
-  border-radius: 6px;
-  margin-right: 16px;
-  width: 136px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
 `;

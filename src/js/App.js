@@ -1,14 +1,16 @@
-import logo from '../logo.svg';
-import '../App.css';
+// DEPENDENCIES
 import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
+import '../App.css';
+
+// IMAGES
 import teeTimes from '../assets/tee-times.jpeg';
 import elsLogo from '../assets/els-for-autism-logo.jpeg';
 import courseSky from '../assets/course-bunker-sky.jpeg';
+
+// CONSTANTS
 import Text from './const/typography';
-
 import theme from './Theme';
-
 import { articles } from './const/articles';
 
 // COMPONENTS
@@ -70,14 +72,6 @@ function App() {
             subheader='Keep up with the latest talk around the 18Birdies Clubhouse, including golf news, instruction, entertainment, and recent product updates.'
             articles={articles}
           />
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
         <Footer />
       </AppWrapper>

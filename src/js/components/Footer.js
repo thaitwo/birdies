@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './Logo.js';
-import appleDownload from '../../assets/app-download-apple.png';
-import googleDownload from '../../assets/app-download-google.png';
+import Text from '../const/typography';
+import DownloadButtons from './DownloadButtons.js';
 
 class Footer extends React.Component {
   constructor() {
@@ -17,10 +17,7 @@ class Footer extends React.Component {
         <FooterTop>
           <TopBar>
             <Logo type='light' />
-            <ButtonGroup>
-              <ButtonImg src={appleDownload} />
-              <ButtonImg src={googleDownload} />
-            </ButtonGroup>
+            <DownloadButtons />
           </TopBar>
           <SiteMap>
             <StyledList>
@@ -90,6 +87,7 @@ const OuterWrapper = styled.div`
   color: ${props => props.theme.colors.white};
   display: flex;
   flex-direction: column;
+  font-family: 'Circular Std Book', Arial, Helvetica, sans-serif;
   justify-content: center;
   margin-top: 80px;
 `;
