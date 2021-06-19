@@ -19,7 +19,7 @@ const BillboardTwo = (props) => {
           <Text.P1>{subheader}</Text.P1>
         </StyledSubheaderWrapper>
         {children}
-        <Button large>{buttonLabel}</Button>
+        <Button large topPadding>{buttonLabel}</Button>
       </StyledContentWrapper>
     </StyledWrapper>
   );

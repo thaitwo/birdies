@@ -1,28 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
-import Text from '../const/typography';
+import { Link } from 'react-router-dom';
 
 const Button = props => {
-  // console.log('hello', props)
-    return (
-      <ButtonWrapper props={props}>
-        {props.children}
-      </ButtonWrapper>
-    )
+  const { to } = props;
+
+  return (
+    <ButtonWrapper to={to} props={props}>
+      {props.children}
+    </ButtonWrapper>
+  )
 }
 
 export default Button;
 
 
-const ButtonWrapper = styled.button`
+const ButtonWrapper = styled(Link)`
   align-items: center;
   background: ${props => props.theme.colors.primary};
   border: none;
   color: ${props => props.theme.colors.white};
-  display: flex;
+  display: inline-flex;
   font-family: 'Circular Std Medium', Arial, Helvetica, sans-serif;
   font-size: 17px;
   height: ${props => props.props.large ? '48px' : '40px'};
   justify-content: space-between;
   padding: 0 24px;
+  text-decoration: none;
 `;

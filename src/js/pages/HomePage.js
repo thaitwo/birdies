@@ -36,6 +36,7 @@ const HomePage = () => {
         description='Explore tee times at thousands of courses to find your next round.'
         header='Book your next round with 18Birdies'
         screenImageUrl={teeTimes}
+        buttonLabel='Book Tee Time'
         subheader='TEE TIME'
       />
       <Poster />

@@ -8,7 +8,7 @@ const theme = {
       secondary: '#3A3A3A',
       tertiary: '#6D6D6D',
       subtle: '#929292',
-      brandPrimary: '#44A2DA'
+      brandPrimary: '#2AB5FF'
     },
     white: '#FFFFFF',
     black: '#000000',
