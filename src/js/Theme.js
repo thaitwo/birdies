@@ -1,6 +1,7 @@
 const theme = {
   shadows: {
     primary: '0 3px 8px rgb(0, 0, 0, 0.08)',
+    primaryHover: '0 8px 16px rgb(0, 0, 0, 0.16)',
   },
   colors: {
     text: {

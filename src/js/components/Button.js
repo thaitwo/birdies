@@ -6,16 +6,16 @@ const Button = props => {
   const { to } = props;
 
   return (
-    <ButtonWrapper to={to} props={props}>
+    <StyledButton to={to} props={props}>
       {props.children}
-    </ButtonWrapper>
+    </StyledButton>
   )
 }
 
 export default Button;
 
 
-const ButtonWrapper = styled(Link)`
+const StyledButton = styled(Link)`
   align-items: center;
   background: ${props => props.theme.colors.primary};
   border: none;
@@ -27,4 +27,9 @@ const ButtonWrapper = styled(Link)`
   justify-content: space-between;
   padding: 0 24px;
   text-decoration: none;
+
+  &:hover {
+    background: ${props => props.theme.colors.brandBlue700};
+    transition: all .1s;
+  }
 `;

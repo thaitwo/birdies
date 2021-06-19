@@ -64,6 +64,13 @@ const StyledList = styled.ul`
     &:last-of-type {
       margin-right: 0;
     }
+
+    &:hover {
+      box-shadow: ${props => props.theme.shadows.primaryHover};
+      cursor: pointer;
+      transform: translateY(-2px);
+      transition: all .1s;
+    }
   }
 `;
 

@@ -29,6 +29,7 @@ const FeaturesPage = () => {
         description='The 18Birdies app provides the most complete, social and interactive mobile experience for your golf game. Our free app helps improve your golf experience on and off the course by connecting you with everything golf.'
         imageUrl={annaImage}
         screenImageUrl={roundSummaryImage}
+        downloadButtons
       />
       <StyledBodyWrapper>
         <MovieScreen 

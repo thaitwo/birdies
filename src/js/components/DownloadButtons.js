@@ -37,6 +37,6 @@ const ButtonImg = styled.img`
 `;
 
 const StyledWrapper = styled.div`
-  padding-top: ${props => props.topPadding ? '32px' : '0'};
-  padding-bottom: ${props => props.bottomPadding ? '32px' : '0'};
+  margin-top: ${props => props.topPadding ? '32px' : '0'};
+  margin-bottom: ${props => props.bottomPadding ? '32px' : '0'};
 `;
