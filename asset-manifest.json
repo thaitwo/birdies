@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/birdies/static/css/main.eff20202.chunk.css",
-    "main.js": "/birdies/static/js/main.6216dd19.chunk.js",
-    "main.js.map": "/birdies/static/js/main.6216dd19.chunk.js.map",
+    "main.js": "/birdies/static/js/main.5f1e4d5e.chunk.js",
+    "main.js.map": "/birdies/static/js/main.5f1e4d5e.chunk.js.map",
     "runtime-main.js": "/birdies/static/js/runtime-main.24fb6218.js",
     "runtime-main.js.map": "/birdies/static/js/runtime-main.24fb6218.js.map",
-    "static/js/2.4b856701.chunk.js": "/birdies/static/js/2.4b856701.chunk.js",
-    "static/js/2.4b856701.chunk.js.map": "/birdies/static/js/2.4b856701.chunk.js.map",
+    "static/js/2.57a4025a.chunk.js": "/birdies/static/js/2.57a4025a.chunk.js",
+    "static/js/2.57a4025a.chunk.js.map": "/birdies/static/js/2.57a4025a.chunk.js.map",
     "static/js/3.224ae7a3.chunk.js": "/birdies/static/js/3.224ae7a3.chunk.js",
     "static/js/3.224ae7a3.chunk.js.map": "/birdies/static/js/3.224ae7a3.chunk.js.map",
     "index.html": "/birdies/index.html",
     "static/css/main.eff20202.chunk.css.map": "/birdies/static/css/main.eff20202.chunk.css.map",
-    "static/js/2.4b856701.chunk.js.LICENSE.txt": "/birdies/static/js/2.4b856701.chunk.js.LICENSE.txt",
+    "static/js/2.57a4025a.chunk.js.LICENSE.txt": "/birdies/static/js/2.57a4025a.chunk.js.LICENSE.txt",
     "static/media/advanced-gps-premium.92ea280b.jpeg": "/birdies/static/media/advanced-gps-premium.92ea280b.jpeg",
     "static/media/anna-nordqvist.f6994754.jpeg": "/birdies/static/media/anna-nordqvist.f6994754.jpeg",
     "static/media/app-download-apple.6ab9868c.png": "/birdies/static/media/app-download-apple.6ab9868c.png",
@@ -20,6 +20,7 @@
     "static/media/birdieslogo.765f86d1.svg": "/birdies/static/media/birdieslogo.765f86d1.svg",
     "static/media/birdieslogoWhite.7d54e13f.svg": "/birdies/static/media/birdieslogoWhite.7d54e13f.svg",
     "static/media/course-bunker-sky.2cc8cd99.jpeg": "/birdies/static/media/course-bunker-sky.2cc8cd99.jpeg",
+    "static/media/discover-18birdies-business.b303bb4a.png": "/birdies/static/media/discover-18birdies-business.b303bb4a.png",
     "static/media/discover-18birdies.706a15f6.png": "/birdies/static/media/discover-18birdies.706a15f6.png",
     "static/media/featuredImageCommunity.9c24e897.png": "/birdies/static/media/featuredImageCommunity.9c24e897.png",
     "static/media/monarch-beach-resort.f5288879.jpeg": "/birdies/static/media/monarch-beach-resort.f5288879.jpeg",
@@ -29,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.24fb6218.js",
-    "static/js/2.4b856701.chunk.js",
+    "static/js/2.57a4025a.chunk.js",
     "static/css/main.eff20202.chunk.css",
-    "static/js/main.6216dd19.chunk.js"
+    "static/js/main.5f1e4d5e.chunk.js"
   ]
 }
