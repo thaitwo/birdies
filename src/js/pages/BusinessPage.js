@@ -10,10 +10,12 @@ import * as ROUTES from '../const/routes';
 
 // IMAGES
 import courseBunkerImage from '../../assets/course-bunker-sky.jpeg';
-import roundSummaryImage from '../../assets/app-screen-round-summary.jpeg';
+import birdiesBusinessImage from '../../assets/discover-18birdies-business.png';
 
 // COMPONENTS
 import HeroTwo from '../components/HeroTwo';
+import MovieScreen from '../components/MovieScreen';
+import JoinForm from '../components/JoinForm';
 
 
 const FeaturesPage = () => {
@@ -27,7 +29,13 @@ const FeaturesPage = () => {
         noPhone
         button
         buttonLabel='Join Today'
+        to='#'
       />
+      <MovieScreen 
+        header='Discover 18Birdies for Business'
+        imageUrl={birdiesBusinessImage}
+      />
+      <JoinForm />
     </StyledWrapper>
   )
 }

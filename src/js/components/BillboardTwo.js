@@ -9,7 +9,7 @@ import Text from '../const/typography';
 import Button from './Button';
 
 const BillboardTwo = (props) => {
-  const { imageUrl, header, subheader, children, buttonLabel } = props;
+  const { imageUrl, header, subheader, children, buttonLabel, to } = props;
 
   return (
     <StyledWrapper imageUrl={imageUrl}>
@@ -19,7 +19,7 @@ const BillboardTwo = (props) => {
           <Text.P1>{subheader}</Text.P1>
         </StyledSubheaderWrapper>
         {children}
-        <Button large topPadding>{buttonLabel}</Button>
+        <Button size='large' to={to} topPadding>{buttonLabel}</Button>
       </StyledContentWrapper>
     </StyledWrapper>
   );

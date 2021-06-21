@@ -54,5 +54,6 @@ const AppWrapper = styled.div`
 `;
 
 const Body = styled.div`
-  transform: translateY(64px);
+  position: relative;
+  margin-top: 64px;
 `;

@@ -88,7 +88,6 @@ const OuterWrapper = styled.div`
   flex-direction: column;
   font-family: 'Circular Std Book', Arial, Helvetica, sans-serif;
   justify-content: center;
-  margin-top: 80px;
 `;
 
 const InnerWrapper = styled.div`

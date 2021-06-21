@@ -14,6 +14,7 @@ const theme = {
     white: '#FFFFFF',
     black: '#000000',
     primary: '#2AB5FF',
+    business: '#003a5d',
     whiteTransparent08: 'rgba(255,255,255,0.08)',
     whiteTransparent24: 'rgba(255,255,255,0.24)',
     whiteTransparent48: 'rgba(255,255,255,0.48)',

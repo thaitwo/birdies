@@ -27,7 +27,7 @@ class TopNav extends React.Component {
           <Link to={ROUTES.ABOUT}>About</Link>
         </Nav>
         <ButtonWrapper>
-          <Button>Download</Button>
+          <Button to='#'>Download</Button>
         </ButtonWrapper>
       </HeaderBar>
     )

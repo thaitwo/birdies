@@ -12,7 +12,7 @@ class Billboard extends React.Component {
       <StyledOuterWrapper>
         <StyledLeftWrapper>
           <Text.H3>Take your game further with a Premium Membership</Text.H3>
-          <Button large>Discover Premium</Button>
+          <Button size='large' to='#'>Discover Premium</Button>
         </StyledLeftWrapper>
         <StyledRightWrapper>
           <Text.H6>Everything in the free version, plus...</Text.H6>

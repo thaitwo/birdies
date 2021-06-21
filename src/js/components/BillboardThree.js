@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import PhoneFrame from './PhoneFrame';
 import Button from './Button';
 import Text from '../const/typography';
-import Icon from '@mdi/react';
 
 const AppScreen = props => {
   const {
@@ -13,14 +11,11 @@ const AppScreen = props => {
     screenImageUrl,
     buttonLabel,
     buttonLink,
-    noPhone
   } = props;
   const button = buttonLabel ? <Button size='large' to={buttonLink}>{buttonLabel}</Button> : '';
-  const phone = noPhone ? '' : <PhoneWrapper><PhoneFrame size='large' screenImageUrl={screenImageUrl} /></PhoneWrapper>;
 
   return (
     <Wrapper>
-      {phone}
       <TextWrapper>
         <Text.SH>{subheader}</Text.SH>
         <Text.H3>{header}</Text.H3>
@@ -36,18 +31,21 @@ export default AppScreen;
 
 const Wrapper = styled.div`
   align-items: center;
+  background: ${props => props.theme.colors.business};
   display: flex;
   flex-direction: row;
-  margin: 120px 0;
-  max-width: 1024px;
+  justify-content: center;
+  padding: 80px 0 96px;
   text-align: left;
   width: 100%;
 
   h3 {
+    color: ${props => props.theme.colors.white};
     margin-bottom: 8px;
   }
 
   p {
+    color: ${props => props.theme.colors.white};
     margin-bottom 24px;
   }
 
@@ -60,25 +58,16 @@ const Wrapper = styled.div`
 
     li {
       align-items: center;
-      color: ${props => props.theme.colors.text.secondary};
+      color: ${props => props.theme.colors.white};
       display: flex;
       font-size: 18px;
       margin-bottom: 12px;
     }
   }
 
-  ul:first-of-type li::before {
-    content: "check_circle";
-    color: ${props => props.theme.colors.text.secondary};
-    font-family: 'Material Icons';
-    font-size: 24px;
-    padding-right: 12px;
-    -webkit-font-feature-settings: 'liga';
-  }
-  
   ul li::before {
-    content: "star";
-    color: ${props => props.theme.colors.text.brandPrimary};
+    content: "check_circle";
+    color: ${props => props.theme.colors.primary};
     font-family: 'Material Icons';
     font-size: 24px;
     padding-right: 12px;
@@ -91,6 +80,8 @@ const PhoneWrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  padding-left: 24px;
   flex: 1;
+  max-width: 1024px;
+  padding-left: 24px;
+  width: 100%:
 `;

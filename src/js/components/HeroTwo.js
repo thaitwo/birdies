@@ -14,12 +14,13 @@ const HeroTwo = props => {
     noPhone,
     downloadButtons,
     button,
-    buttonLabel
+    buttonLabel,
+    to
   } = props;
 
   const phoneFrame = noPhone ? '' : <PhoneFrame screenImageUrl={screenImageUrl} />;
   const downloadButtonsVisibility = downloadButtons ? <DownloadButtons topPadding /> : '';
-  const buttonVisibility = button ? <Button large>{buttonLabel}</Button> : '';
+  const buttonVisibility = button ? <Button size='large' to={to}>{buttonLabel}</Button> : '';
 
   return (
     <StyledWrapper imageUrl={imageUrl}>

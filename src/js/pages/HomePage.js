@@ -38,6 +38,7 @@ const HomePage = () => {
         screenImageUrl={teeTimes}
         buttonLabel='Book Tee Time'
         subheader='TEE TIME'
+        buttonLink='#'
       />
       <Poster />
       <Testimonial
@@ -50,6 +51,7 @@ const HomePage = () => {
         header='18Birdies for Business'
         subheader='Harness the power of the 18Birdies app and community to enhance your course experience, grow golfer participation and increase customer engagement.'
         buttonLabel='Explore Business'
+        to='#'
       >
         <ul>
           <li>

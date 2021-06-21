@@ -14,7 +14,7 @@ const Podiums = (props) => {
             <Text.H6>{article.header}</Text.H6>
             <Text.P2>{article.subheader}</Text.P2>
           </StyledCopyWrapper>
-          <TextLink>Read More</TextLink>
+          <TextLink to='#'>Read More</TextLink>
         </StyledContentWrapper>
       </li>
     );
@@ -37,7 +37,7 @@ export default Podiums;
 
 const StyledWrapper = styled.div`
   max-width: 1024px;
-  padding: 120px 0;
+  margin: 120px 0 160px;
   text-align: center;
   width: 100%;
 `;
